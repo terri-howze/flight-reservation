@@ -1,0 +1,63 @@
+GET http://localhost:8085/users
+
+###
+
+POST http://localhost:8085/users
+Content-Type: application/json
+
+{
+    "name": "Test Please Work" ,
+    "password" : "password"
+}
+
+###
+
+POST http://localhost:8085/users/login
+Content-Type: application/json
+
+{
+    "name": "Kiran" ,
+    "password" : "password"
+<<<<<<< HEAD
+=======
+}
+
+###
+
+GET http://localhost:8085/users/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzU5NjQwNDUsImV4cCI6MTYzNTk2NzY0NX0.ZnU5jcU4wQFR9o5UhhepB7YVunx9SqTU-djn2jXaWgI
+Content-Type: application/json
+
+{
+    "name": "Kiran"
+}
+
+###
+
+PUT http://localhost:8085/users/makeres
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzU5NjQwNDUsImV4cCI6MTYzNTk2NzY0NX0.ZnU5jcU4wQFR9o5UhhepB7YVunx9SqTU-djn2jXaWgI
+Content-Type: application/json
+
+{
+    "name": "Kiran",
+    "departure": "617bf8182fd5aa3e6654bcc8",
+    "destination": "617bf8182fd5aa3e6654bcc9",
+    "passengers": "4"
+
+}
+
+###
+
+DELETE http://localhost:8085/users/deleteres
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzU5NjQwNDUsImV4cCI6MTYzNTk2NzY0NX0.ZnU5jcU4wQFR9o5UhhepB7YVunx9SqTU-djn2jXaWgI
+Content-Type: application/json
+
+{
+    "name": "Kiran",
+<<<<<<< HEAD
+    "id": "6181588b8d66e377d5c5adc8"
+>>>>>>> 0b8945694a635be061c1d1420334e3272009e158
+=======
+    "id": "61815b0ba05f1280f4b658db"
+>>>>>>> master
+}
